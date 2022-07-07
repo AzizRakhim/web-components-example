@@ -6,17 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <title>Document</title>
+  <title>Web Components Example</title>
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 </head>
 <body>
+  <user-card name="John Doe" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+    <div slot="email">
+      johndoe@gmail.com
+    </div>
+    <div slot="phone">
+      555-555-5555
+    </div>
+  </user-card>
+  <user-card name="Jane Doe" avatar="https://randomuser.me/api/portraits/women/1.jpg">
+    <div slot="email">
+      janedoe@gmail.com
+    </div>
+    <div slot="phone">
+      333-333-3333
+    </div>
+  </user-card>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
   <script src="js/main.js"></script>
+  <script src="js/userCard.js"></script>
 </body>
 </html>
